@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+// variables
+
+$base-font: 'Karla', sans-serif;
+
+$white:#FFFFFF;
+$concrete:#F2F2F2;
+$cadetBlue:#9AA7BE;
+$easternBlue:#2AB3B1;
+$pear:#C0DF33;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body  {
+max-width: 1440px;
+
+ font-family: $base-font;
+ background-color: $concrete;
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+ background-color: black;
+
+}
+
+.wrapper-component {
+  padding: 32px;
+  background-color: $concrete;
+}
+
+
+// footer {
+//   // position: absolute;
+//   // left: 0;
+//   // right: 0;
+//   // bottom: 0;
+// }
+
+
+
+.card {
+  padding: 24px;
+}
+
+.card-1 {
+  background-color: $white;
+}
+
+.card-2 {
+  background-color: $easternBlue;
+}
+
+.card-3 {
+  background-color: $easternBlue;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1519);
+  }
+  
+}
+
+.card-3 ul {
+  list-style: none;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
