@@ -76,6 +76,12 @@ body {
   color: #98a6bd;
 }
 
+@media (min-width: 26.25rem) {
+  .wrapper-component .main-component .card-1 .card-1__text-developers {
+    display: block;
+  }
+}
+
 .wrapper-component .main-component .card-2 {
   padding: 1.5rem;
   background-color: #2ab2af;
@@ -176,6 +182,48 @@ body {
   letter-spacing: -0.0106rem;
 }
 
+@media (min-width: 48rem) {
+  .wrapper-component .main-component .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 'c1 c1' 'c2 c3';
+  }
+  .wrapper-component .main-component .card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: c1;
+  }
+  .wrapper-component .main-component .card-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: c2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper-component .main-component .card-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: c3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .wrapper-component .footer__attribution {
   width: 100%;
   padding: 1.5rem 0 1rem 0;
@@ -215,53 +263,5 @@ body {
 .wrapper-component .footer__attribution-link:hover {
   background-color: rgba(81, 131, 245, 0.302);
   border-bottom: 0.125rem solid #5183f5;
-}
-
-@media (min-width: 26.25rem) {
-  .card-1__text-developers {
-    display: block;
-  }
-}
-
-@media (min-width: 48rem) {
-  .card {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 'c1 c1' 'c2 c3';
-  }
-  .card-1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: c1;
-  }
-  .card-2 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: c2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .card-3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-    grid-area: c3;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 /*# sourceMappingURL=main.css.map */
