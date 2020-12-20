@@ -47,6 +47,8 @@ body  {
   
     .card {
       padding: 24px;
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, .2);
+      z-index: 3;
   
       &-1 {
         background-color: $white;
