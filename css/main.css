@@ -41,15 +41,14 @@ body {
 }
 
 .wrapper-component .main-component {
-  padding: 32px;
   background-color: #F2F2F2;
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  z-index: 3;
 }
 
 .wrapper-component .main-component .card {
   padding: 24px;
-  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-  z-index: 3;
 }
 
 .wrapper-component .main-component .card-1 {
@@ -232,7 +231,6 @@ ToDo
 - fontsize %, rem and em - change px into rem / em;
 - check sass variables;
 - check if can separate the btn-pear like above;
-- add box shadow;
 - add effect to button and better focus style;
 - RWD on desktop size of elements!
 - add git ignore;
