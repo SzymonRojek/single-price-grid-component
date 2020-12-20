@@ -19,10 +19,8 @@ html {
 }
 
 body {
-  max-width: 1440px;
   font-family: "Karla", sans-serif;
   background-color: #F2F2F2;
-  background-color: black;
 }
 
 .btn {
@@ -31,6 +29,35 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 5px;
+}
+
+.screen-reader-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+          clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
+}
+
+.wrapper-component {
+  min-height: 100vh;
+  max-width: 1440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F2F2F2;
 }
 
 .main-component {
@@ -132,6 +159,38 @@ body {
   letter-spacing: -0.17px;
 }
 
+.footer__attribution {
+  width: 100%;
+  padding: 0.5rem 0 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F2F2F2;
+}
+
+.footer__attribution-text {
+  color: #9AA7BE;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.footer__attribution-link {
+  display: inline-block;
+  padding-top: 0.5em;
+  color: #3b53b0;
+  text-decoration: none;
+}
+
 @media (min-width: 420px) {
   .card-1__text-developers {
     display: block;
@@ -153,14 +212,20 @@ body {
 }
 
 /*
+
 ToDo
 
-- fontsize %, rem and em;
-- positioning in body;
-- footer
-- sass variables
-- check if can separate the btn-pear 
-- check 
+- fontsize %, rem and em - change px into rem / em;
+- positioning in the body;
+- add footer;
+- check sass variables;
+- check if can separate the btn-pear like above;
+- add box shadow;
+- check: button or link;
+- add effect to button and better focus style;
+- RWD on desktop
+- add git ignore;
+- add to readme info about mobile first etc, about project;
 
 */
 /*# sourceMappingURL=main.css.map */

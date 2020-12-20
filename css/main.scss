@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
-// variables
+// Variables:
 
 $base-font: 'Karla', sans-serif;
 
 $white:#FFFFFF;
 $concrete:#F2F2F2;
 $cadetBlue:#9AA7BE;
+$azureBlue: #3b53b0;
 $easternBlue:#2AB3B1;
 $pear:#C0DF33;
 
@@ -22,14 +23,8 @@ html {
   align-items: center;
 }
 body  {
-  max-width: 1440px;
   font-family: $base-font;
   background-color: $concrete;
-//  position: absolute;
-//  top: 50%;
-//  left: 50%;
-//  transform: translate(-50%, -50%);
- background-color: black;
 }
 
 .btn {
@@ -40,6 +35,24 @@ body  {
   border-radius: 5px;
 }
 
+.screen-reader-only {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  clip: rect(1px,1px,1px,1px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  overflow: hidden !important;
+}
+
+.wrapper-component {
+  min-height: 100vh;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $concrete;
+}
 .main-component {
   padding: 32px;
   background-color: $concrete;
@@ -137,13 +150,28 @@ body  {
   }
 }
 
+.footer__attribution {
+  width: 100%;
+  padding: 0.5rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $concrete;
 
-// footer {
-//   // position: absolute;
-//   // left: 0;
-//   // right: 0;
-//   // bottom: 0;
-// }
+  &-text {
+    color: $cadetBlue;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+
+  &-link {
+    display: inline-block;
+    padding-top: 0.5em;
+    color: $azureBlue;
+    text-decoration: none;
+  }
+}
 
 
 @media (min-width: 420px) {
@@ -165,13 +193,19 @@ body  {
 
 
 /*
+
 ToDo
 
-- fontsize %, rem and em;
-- positioning in body;
-- footer
-- sass variables
-- check if can separate the btn-pear 
-- check 
+- fontsize %, rem and em - change px into rem / em;
+- positioning in the body;
+- add footer;
+- check sass variables;
+- check if can separate the btn-pear like above;
+- add box shadow;
+- check: button or link;
+- add effect to button and better focus style;
+- RWD on desktop
+- add git ignore;
+- add to readme info about mobile first etc, about project;
 
 */
