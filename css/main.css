@@ -1,14 +1,22 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Karla", sans-serif;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
+  text-rendering: optimizeSpeed;
 }
 
 .screen-reader-only {
@@ -24,7 +32,7 @@ body {
 .wrapper-component {
   min-height: 100vh;
   max-width: 1440px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -36,43 +44,43 @@ body {
 
 .wrapper-component .main-component {
   padding: 72px 28px 28px 28px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   z-index: 3;
 }
 
 .wrapper-component .main-component .card {
-  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.189);
+          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.189);
 }
 
 .wrapper-component .main-component .card-1 {
   padding: 24px;
-  background-color: #FFFFFF;
+  background-color: white;
   border-radius: 8px 8px 0 0;
 }
 
 .wrapper-component .main-component .card-1__heading-primary {
   font-size: 20px;
   padding: 28px 0 24px 0;
-  color: #2AB3B1;
+  color: #2ab2af;
 }
 
 .wrapper-component .main-component .card-1__heading-secondary {
   font-size: 15px;
-  color: #C0DF33;
+  color: #c0df34;
 }
 
 .wrapper-component .main-component .card-1__text {
   padding: 16px 0 8px 0;
   font-size: 14px;
   line-height: 26px;
-  color: #9AA7BE;
+  color: #98a6bd;
 }
 
 .wrapper-component .main-component .card-2 {
   padding: 24px;
-  background-color: #2AB3B1;
-  color: #FFFFFF;
+  background-color: #2ab2af;
+  color: white;
 }
 
 .wrapper-component .main-component .card-2__heading-secondary {
@@ -102,44 +110,44 @@ body {
 
 .wrapper-component .main-component .card-2 .btn {
   padding: 15px 85px 14px 85px;
-  color: #FFFFFF;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 5px;
 }
 
 .wrapper-component .main-component .card-2 .btn:link, .wrapper-component .main-component .card-2 .btn:visited {
+  display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
 .wrapper-component .main-component .card-2 .btn-pear {
-  background-color: #C0DF33;
+  background-color: #c0df34;
 }
 
 .wrapper-component .main-component .card-2 .btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.189);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.189);
 }
 
 .wrapper-component .main-component .card-2 .btn:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  background-color: #F2F2F2;
-  color: #2AB3B1;
+  color: #2ab2af;
+  background-color: #f2f2f2;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
 }
 
 .wrapper-component .main-component .card-3 {
   padding: 24px;
-  background-color: #2AB3B1;
-  color: #FFFFFF;
+  background-color: #2ab2af;
+  color: white;
   position: relative;
 }
 
@@ -150,7 +158,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.1519);
+  background-color: rgba(255, 255, 255, 0.153);
 }
 
 .wrapper-component .main-component .card-3__heading-secondary {
@@ -185,12 +193,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .wrapper-component .footer__attribution-text {
   padding-bottom: 0.5em;
-  color: #9AA7BE;
+  color: #98a6bd;
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
@@ -206,7 +214,7 @@ body {
 }
 
 .wrapper-component .footer__attribution-link:hover {
-  background-color: rgba(81, 131, 245, 0.3);
+  background-color: rgba(81, 131, 245, 0.302);
   border-bottom: 2px solid #5183f5;
 }
 
@@ -263,10 +271,7 @@ body {
 ToDo
 
 - fontsize %, rem and em - change px into rem / em;
-- check sass variables;
-- check if can separate the btn-pear like above;
-- add effect to button and better focus style;
-- RWD on desktop size of elements!
+- poczytać o ul dots none
 - add git ignore;
 - add to readme info about mobile first etc, about project;
 

@@ -4,24 +4,36 @@
 
 $base-font: 'Karla', sans-serif;
 
-$white:#FFFFFF;
-$concrete:#F2F2F2;
-$cadetBlue:#9AA7BE;
-$azureBlue: #3b53b0;
-$easternBlue:#2AB3B1;
-$pear:#C0DF33;
+$white:hsl(0, 0%, 100%);
+$concrete:hsl(0, 0%, 95%);
+$grayBombay:hsl(214, 5%, 73%);
+$cadetBlue:hsl(218, 22%, 67%);
+$azureBlue: hsl(228, 50%, 46%);
+$cornflowerBlue:hsl(222, 89%, 64%);
+$easternBlue:hsl(179, 62%, 43%);
+$pear:hsl(71, 73%, 54%);
 
-* {
+$navyBlue-alpha:hsla(222, 89%, 64%, 0.302);
+$black-alpha:hsla(0, 0%, 0%, 0.189);
+$grayDark-alpha:hsla(0, 0%, 100%, 0.153);
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body  {
   font-family: $base-font;
   background-color: $concrete;
+  text-rendering: optimizeSpeed;
 }
-
 
 .screen-reader-only {
   position: absolute;
@@ -45,12 +57,9 @@ body  {
     background-color: $concrete;
     z-index: 3;
   
-  
-  
     .card {
-      box-shadow: 0px 20px 20px rgba(0, 0, 0, .2);
+      box-shadow: 0px 20px 20px $black-alpha;
      
-    
       &-1 {
         padding: 24px;
         background-color: $white;
@@ -112,9 +121,9 @@ body  {
         
             &:link,
             &:visited {
+              display: inline-block;
               text-transform: uppercase;
               text-decoration: none;
-              display: inline-block;
               transition: all .2s;
             }
         
@@ -124,14 +133,14 @@ body  {
         
             &:hover {
               transform: translateY(-3px);
-              box-shadow: 0 10px 20px rgba(0,0,0,.2);
+              box-shadow: 0 10px 20px $black-alpha;
             }
         
             &:active {
               transform: translateY(-1px);
-              box-shadow: 0 5px 10px rgba(0,0,0,.2);
-              background-color: $concrete;
               color: $easternBlue;
+              background-color: $concrete;
+              box-shadow: 0 5px 10px $black-alpha;
             }
         }
       }
@@ -149,7 +158,7 @@ body  {
           left: 0;
           width: 100%;
           height: 100%;
-          background-color: rgba(255, 255, 255, 0.1519);
+          background-color: $grayDark-alpha;
         }
       
         &__heading-secondary {
@@ -191,14 +200,14 @@ body  {
       display: inline-block;
       padding-top: 0.5em;
       text-decoration: none;
-      border-bottom: 2px solid #b7babe;
-      color: #5183f5;
+      border-bottom: 2px solid $grayBombay;
+      color: $cornflowerBlue;
       font-weight: 600;
       line-height: 1rem;
 
       &:hover {
-        background-color: rgba(81,131,245,0.3);
-        border-bottom: 2px solid #5183f5;;
+        background-color: $navyBlue-alpha;
+        border-bottom: 2px solid $cornflowerBlue;
       }
     }
   }
@@ -239,10 +248,7 @@ body  {
 ToDo
 
 - fontsize %, rem and em - change px into rem / em;
-- check sass variables;
-- check if can separate the btn-pear like above;
-- add effect to button and better focus style;
-- RWD on desktop size of elements!
+- poczytać o ul dots none
 - add git ignore;
 - add to readme info about mobile first etc, about project;
 
