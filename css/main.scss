@@ -30,6 +30,7 @@ html {
 }
 
 body  {
+  // font-size by default 16px
   font-family: $base-font;
   background-color: $concrete;
   text-rendering: optimizeSpeed;
@@ -37,8 +38,8 @@ body  {
 
 .screen-reader-only {
   position: absolute;
-  height: 1px;
-  width: 1px;
+  height: 0.0625rem;
+  width: 0.0625rem;
   clip: rect(1px,1px,1px,1px);
   clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
   overflow: hidden !important;
@@ -46,78 +47,78 @@ body  {
 
 .wrapper-component {
   min-height: 100vh;
-  max-width: 1440px;
+  max-width: 90rem;
   background-color: $concrete;
   display: grid;
   justify-content: center;
   align-content: center;
 
   .main-component {
-    padding: 72px 28px 28px 28px;
+    padding: 4.5rem 1.75rem 1.75rem 1.75rem;
     background-color: $concrete;
     z-index: 3;
   
     .card {
-      box-shadow: 0px 20px 20px $black-alpha;
+      box-shadow: 0rem 1.25rem 1.25rem $black-alpha;
      
       &-1 {
-        padding: 24px;
+        padding: 1.5rem;
         background-color: $white;
-        border-radius: 8px 8px 0 0;
+        border-radius: 0.5rem 0.5rem 0 0;
       
         &__heading-primary {
-          font-size: 20px;
-          padding: 28px 0 24px 0;
+          font-size: 1.25rem;
+          padding: 1.75rem 0 1.5rem 0;
           color: $easternBlue;
         }
       
         &__heading-secondary {
-          font-size: 15px;
+          font-size: 0.9375rem;
           color: $pear;
         }
       
         &__text {
-          padding: 16px 0 8px 0;
-          font-size: 14px;
-          line-height: 26px;
+          padding: 1rem 0 0.5rem 0;
+          font-size: 0.875rem;
+          line-height: 1.625rem;
           color: $cadetBlue;
         }
       }
   
       &-2 {
-        padding: 24px;
+        padding: 1.5rem;
         background-color: $easternBlue;
         color: $white;
       
         &__heading-secondary {
-          font-size: 18px;
+          font-size: 1.125rem;
         }
       
         &__pricing {
-          margin-top: 18px;
+          margin-top: 1.125rem;
           display: flex;
       
           &-price {
-            font-size: 32px;
+            font-size: 2rem;
             font-weight: 700;
           }
       
           &-period {
-            padding: 8px 0 0 11px;
+            padding: 0.5rem 0 0 0.6875rem;
             opacity: .5;
           }
         }
       
         &__text {
-          padding: 4px 0 26px 0;
+          padding: 0.25rem 0 1.625rem 0;
         }
         
         .btn {
-          padding: 15px 85px 14px 85px;
+          padding: 0.9375rem 5.3125rem 0.875rem 5.3125rem;
           color: $white;
           text-transform: uppercase;
-          letter-spacing: 1px;
-          border-radius: 5px;
+          letter-spacing: 0.0625rem;
+          border-radius: 0.3125rem;
         
             &:link,
             &:visited {
@@ -133,20 +134,20 @@ body  {
         
             &:hover {
               transform: translateY(-3px);
-              box-shadow: 0 10px 20px $black-alpha;
+              box-shadow: 0 0.625rem 1.25rem $black-alpha;
             }
         
             &:active {
               transform: translateY(-1px);
               color: $easternBlue;
               background-color: $concrete;
-              box-shadow: 0 5px 10px $black-alpha;
+              box-shadow: 0 0.3125rem 0.625rem $black-alpha;
             }
         }
       }
   
       &-3 {
-        padding: 24px;
+        padding: 1.5rem;
         background-color: $easternBlue;
         color: $white;
         position: relative;
@@ -162,19 +163,19 @@ body  {
         }
       
         &__heading-secondary {
-          font-size: 18px;
-          letter-spacing: -0.22px;
+          font-size: 1.125rem;
+          letter-spacing: -0.0138rem;
         }
       
         &__list {
-          padding-top: 18px;
+          padding-top: 1.125rem;
           list-style: none;
         }
       
         &__list-item {
-          font-size: 14px;
-          line-height: 20px;
-          letter-spacing: -0.17px;
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+          letter-spacing: -0.0106rem;
         }
       }
     }
@@ -193,34 +194,34 @@ body  {
       padding-bottom: 0.5em;
       color: $cadetBlue;
       font-size: 0.8rem;
-      letter-spacing: 1px;
+      letter-spacing: 0.0625rem;
     }
   
     &-link {
       display: inline-block;
       padding-top: 0.5em;
       text-decoration: none;
-      border-bottom: 2px solid $grayBombay;
+      border-bottom: 0.125rem solid $grayBombay;
       color: $cornflowerBlue;
       font-weight: 600;
       line-height: 1rem;
 
       &:hover {
         background-color: $navyBlue-alpha;
-        border-bottom: 2px solid $cornflowerBlue;
+        border-bottom: 0.125rem solid $cornflowerBlue;
       }
     }
   }
 }
 
 
-@media (min-width: 420px) {
+@media (min-width: 26.25rem) {
   .card-1__text-developers {
     display: block;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
  .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -247,9 +248,7 @@ body  {
 
 ToDo
 
-- fontsize %, rem and em - change px into rem / em;
 - poczytać o ul dots none
-- add git ignore;
 - add to readme info about mobile first etc, about project;
 
 */

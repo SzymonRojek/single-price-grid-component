@@ -21,8 +21,8 @@ body {
 
 .screen-reader-only {
   position: absolute;
-  height: 1px;
-  width: 1px;
+  height: 0.0625rem;
+  width: 0.0625rem;
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
           clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
@@ -31,7 +31,7 @@ body {
 
 .wrapper-component {
   min-height: 100vh;
-  max-width: 1440px;
+  max-width: 90rem;
   background-color: #f2f2f2;
   display: -ms-grid;
   display: grid;
@@ -43,77 +43,77 @@ body {
 }
 
 .wrapper-component .main-component {
-  padding: 72px 28px 28px 28px;
+  padding: 4.5rem 1.75rem 1.75rem 1.75rem;
   background-color: #f2f2f2;
   z-index: 3;
 }
 
 .wrapper-component .main-component .card {
-  -webkit-box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.189);
-          box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.189);
+  -webkit-box-shadow: 0rem 1.25rem 1.25rem rgba(0, 0, 0, 0.189);
+          box-shadow: 0rem 1.25rem 1.25rem rgba(0, 0, 0, 0.189);
 }
 
 .wrapper-component .main-component .card-1 {
-  padding: 24px;
+  padding: 1.5rem;
   background-color: white;
-  border-radius: 8px 8px 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .wrapper-component .main-component .card-1__heading-primary {
-  font-size: 20px;
-  padding: 28px 0 24px 0;
+  font-size: 1.25rem;
+  padding: 1.75rem 0 1.5rem 0;
   color: #2ab2af;
 }
 
 .wrapper-component .main-component .card-1__heading-secondary {
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #c0df34;
 }
 
 .wrapper-component .main-component .card-1__text {
-  padding: 16px 0 8px 0;
-  font-size: 14px;
-  line-height: 26px;
+  padding: 1rem 0 0.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.625rem;
   color: #98a6bd;
 }
 
 .wrapper-component .main-component .card-2 {
-  padding: 24px;
+  padding: 1.5rem;
   background-color: #2ab2af;
   color: white;
 }
 
 .wrapper-component .main-component .card-2__heading-secondary {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .wrapper-component .main-component .card-2__pricing {
-  margin-top: 18px;
+  margin-top: 1.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .wrapper-component .main-component .card-2__pricing-price {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .wrapper-component .main-component .card-2__pricing-period {
-  padding: 8px 0 0 11px;
+  padding: 0.5rem 0 0 0.6875rem;
   opacity: .5;
 }
 
 .wrapper-component .main-component .card-2__text {
-  padding: 4px 0 26px 0;
+  padding: 0.25rem 0 1.625rem 0;
 }
 
 .wrapper-component .main-component .card-2 .btn {
-  padding: 15px 85px 14px 85px;
+  padding: 0.9375rem 5.3125rem 0.875rem 5.3125rem;
   color: white;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 5px;
+  letter-spacing: 0.0625rem;
+  border-radius: 0.3125rem;
 }
 
 .wrapper-component .main-component .card-2 .btn:link, .wrapper-component .main-component .card-2 .btn:visited {
@@ -131,8 +131,8 @@ body {
 .wrapper-component .main-component .card-2 .btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.189);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.189);
+  -webkit-box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.189);
+          box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.189);
 }
 
 .wrapper-component .main-component .card-2 .btn:active {
@@ -140,12 +140,12 @@ body {
           transform: translateY(-1px);
   color: #2ab2af;
   background-color: #f2f2f2;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.189);
+  -webkit-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.189);
+          box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.189);
 }
 
 .wrapper-component .main-component .card-3 {
-  padding: 24px;
+  padding: 1.5rem;
   background-color: #2ab2af;
   color: white;
   position: relative;
@@ -162,19 +162,19 @@ body {
 }
 
 .wrapper-component .main-component .card-3__heading-secondary {
-  font-size: 18px;
-  letter-spacing: -0.22px;
+  font-size: 1.125rem;
+  letter-spacing: -0.0138rem;
 }
 
 .wrapper-component .main-component .card-3__list {
-  padding-top: 18px;
+  padding-top: 1.125rem;
   list-style: none;
 }
 
 .wrapper-component .main-component .card-3__list-item {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.17px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.0106rem;
 }
 
 .wrapper-component .footer__attribution {
@@ -200,14 +200,14 @@ body {
   padding-bottom: 0.5em;
   color: #98a6bd;
   font-size: 0.8rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 .wrapper-component .footer__attribution-link {
   display: inline-block;
   padding-top: 0.5em;
   text-decoration: none;
-  border-bottom: 2px solid #b7babe;
+  border-bottom: 0.125rem solid #b7babe;
   color: #5183f5;
   font-weight: 600;
   line-height: 1rem;
@@ -215,16 +215,16 @@ body {
 
 .wrapper-component .footer__attribution-link:hover {
   background-color: rgba(81, 131, 245, 0.302);
-  border-bottom: 2px solid #5183f5;
+  border-bottom: 0.125rem solid #5183f5;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 26.25rem) {
   .card-1__text-developers {
     display: block;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .card {
     display: -ms-grid;
     display: grid;
@@ -270,9 +270,7 @@ body {
 
 ToDo
 
-- fontsize %, rem and em - change px into rem / em;
 - poczytać o ul dots none
-- add git ignore;
 - add to readme info about mobile first etc, about project;
 
 */
