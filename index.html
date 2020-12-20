@@ -2,57 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> -->
   <link rel="stylesheet" href="css/main.css">
   <title>Frontend Mentor | Single Price Grid Component</title>
 </head>
 <body>
   
-  <div class="wrapper-component">
-    <main class="card-container">
+  <div >
+    <main class="main-component">
       <div class="card card-1">
-        <h1>
+        <h1 class="card-1__heading-primary">
           Join our community
         </h1>
-        <h2>
+        <h2 class="card-1__heading-secondary">
           30-day, hassle-free money back guarantee
         </h2>
-        <p> 
-          Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.
+        <p class="card-1__text"> 
+          Gain access to our full library of tutorials along with expert code reviews. <span class="card-1__text-developers">Perfect for any developers who are serious about honing their skills.</span>
         </p>
       </div>
       <div class="card card-2">
-        <h2>
+        <h2 class="card-2__heading-secondary">
           Monthly Subscription
         </h2>
-        <span>$29</span>
-        <p>
-          per month
+        
+        <div class="card-2__pricing">
+          <span class="card-2__pricing-price">
+            $29
+          </span>
+          <p class="card-2__pricing-period">
+            per month
+         </p>
+        </div>
+       
+        <p class="card-2__text">
+          Full access for less than $1 a day
         </p>
-        <p>
-          Full access for less than <span>$1</span>a day
-        </p>
-        <button>
+        <button class="btn btn-pear btn-animated">
           Sign Up
         </button>
       </div>
       <div class="card card-3">
-        <h2>
+        <h2 class="card-3__headingTwo">
           Why Us
         </h2>
         
-        <ul>
-          <li>Tutorials by industry experts</li>
-          <li>Peer &amp; expert code review</li>
-          <li>Coding exercises</li>
-          <li>Access to our GitHub repos</li>
-          <li>Community forum</li>
-          <li>Flashcard decks</li>
-          <li>New videos every week</li>
+        <ul class="card-3__list">
+          <li class="card-3__list-item">
+            Tutorials by industry experts
+          </li>
+          <li class="card-3__list-item">
+            Peer &amp; expert code review
+          </li>
+          <li class="card-3__list-item">
+            Coding exercises
+          </li>
+          <li class="card-3__list-item">
+            Access to our GitHub repos
+          </li>
+          <li class="card-3__list-item">
+            Community forum
+          </li>
+          <li class="card-3__list-item">
+            Flashcard decks
+          </li>
+          <li class="card-3__list-item">
+            New videos every week
+          </li>
         </ul>
       </div>
     </main>

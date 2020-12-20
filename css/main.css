@@ -25,29 +25,88 @@ body {
   background-color: black;
 }
 
-.wrapper-component {
+.btn {
+  padding: 15px 85px 14px 85px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.main-component {
   padding: 32px;
   background-color: #F2F2F2;
 }
 
-.card {
+.main-component .card {
   padding: 24px;
 }
 
-.card-1 {
+.main-component .card-1 {
   background-color: #FFFFFF;
+  border-radius: 8px 8px 0 0;
 }
 
-.card-2 {
-  background-color: #2AB3B1;
+.main-component .card-1__heading-primary {
+  font-size: 20px;
+  padding: 28px 0 24px 0;
+  color: #2AB3B1;
 }
 
-.card-3 {
+.main-component .card-1__heading-secondary {
+  font-size: 15px;
+  color: #C0DF33;
+}
+
+.main-component .card-1__text {
+  padding: 16px 0 8px 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: #9AA7BE;
+}
+
+.main-component .card-2 {
   background-color: #2AB3B1;
+  color: #FFFFFF;
+}
+
+.main-component .card-2__heading-secondary {
+  font-size: 18px;
+}
+
+.main-component .card-2__pricing {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-component .card-2__pricing-price {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.main-component .card-2__pricing-period {
+  padding: 8px 0 0 11px;
+  opacity: .5;
+}
+
+.main-component .card-2__text {
+  padding: 4px 0 26px 0;
+}
+
+.main-component .card-2 .btn-pear {
+  background-color: #C0DF33;
+  border: 0px solid #C0DF33;
+}
+
+.main-component .card-3 {
+  background-color: #2AB3B1;
+  color: #FFFFFF;
   position: relative;
 }
 
-.card-3::after {
+.main-component .card-3::after {
   content: '';
   position: absolute;
   top: 0;
@@ -57,12 +116,30 @@ body {
   background-color: rgba(255, 255, 255, 0.1519);
 }
 
-.card-3 ul {
+.main-component .card-3__heading-secondary {
+  font-size: 18px;
+  letter-spacing: -0.22px;
+}
+
+.main-component .card-3__list {
+  padding-top: 18px;
   list-style: none;
 }
 
+.main-component .card-3__list-item {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.17px;
+}
+
+@media (min-width: 420px) {
+  .card-1__text-developers {
+    display: block;
+  }
+}
+
 @media (min-width: 768px) {
-  .card-container {
+  .main-component {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -74,4 +151,16 @@ body {
     grid-column-end: 3;
   }
 }
+
+/*
+ToDo
+
+- fontsize %, rem and em;
+- positioning in body;
+- footer
+- sass variables
+- check if can separate the btn-pear 
+- check 
+
+*/
 /*# sourceMappingURL=main.css.map */
