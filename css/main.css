@@ -25,23 +25,17 @@ body {
   min-height: 100vh;
   max-width: 1440px;
   background-color: #F2F2F2;
-}
-
-.wrapper-component .main-component {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 72px 32px 32px 32px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.wrapper-component .main-component {
+  padding: 72px 28px 28px 28px;
   background-color: #F2F2F2;
   z-index: 3;
 }
@@ -223,16 +217,44 @@ body {
 }
 
 @media (min-width: 768px) {
-  .main-component {
+  .card {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 'c1 c1' 'c2 c3';
   }
   .card-1 {
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
-        grid-column-start: 1;
-    grid-column-end: 3;
+    -ms-grid-column-span: 2;
+    grid-area: c1;
+  }
+  .card-2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: c2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: c3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
