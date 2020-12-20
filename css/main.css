@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 *,
 *::before,
@@ -265,13 +264,4 @@ body {
             flex-direction: column;
   }
 }
-
-/*
-
-ToDo
-
-- poczytać o ul dots none
-- add to readme info about mobile first etc, about project;
-
-*/
 /*# sourceMappingURL=main.css.map */
