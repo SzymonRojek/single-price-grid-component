@@ -6,29 +6,9 @@
           box-sizing: border-box;
 }
 
-html {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 body {
   font-family: "Karla", sans-serif;
   background-color: #F2F2F2;
-}
-
-.btn {
-  padding: 15px 85px 14px 85px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 5px;
 }
 
 .screen-reader-only {
@@ -60,80 +40,111 @@ body {
   background-color: #F2F2F2;
 }
 
-.main-component {
+.wrapper-component .main-component {
   padding: 32px;
   background-color: #F2F2F2;
 }
 
-.main-component .card {
+.wrapper-component .main-component .card {
   padding: 24px;
 }
 
-.main-component .card-1 {
+.wrapper-component .main-component .card-1 {
   background-color: #FFFFFF;
   border-radius: 8px 8px 0 0;
 }
 
-.main-component .card-1__heading-primary {
+.wrapper-component .main-component .card-1__heading-primary {
   font-size: 20px;
   padding: 28px 0 24px 0;
   color: #2AB3B1;
 }
 
-.main-component .card-1__heading-secondary {
+.wrapper-component .main-component .card-1__heading-secondary {
   font-size: 15px;
   color: #C0DF33;
 }
 
-.main-component .card-1__text {
+.wrapper-component .main-component .card-1__text {
   padding: 16px 0 8px 0;
   font-size: 14px;
   line-height: 26px;
   color: #9AA7BE;
 }
 
-.main-component .card-2 {
+.wrapper-component .main-component .card-2 {
   background-color: #2AB3B1;
   color: #FFFFFF;
 }
 
-.main-component .card-2__heading-secondary {
+.wrapper-component .main-component .card-2__heading-secondary {
   font-size: 18px;
 }
 
-.main-component .card-2__pricing {
+.wrapper-component .main-component .card-2__pricing {
   margin-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.main-component .card-2__pricing-price {
+.wrapper-component .main-component .card-2__pricing-price {
   font-size: 32px;
   font-weight: 700;
 }
 
-.main-component .card-2__pricing-period {
+.wrapper-component .main-component .card-2__pricing-period {
   padding: 8px 0 0 11px;
   opacity: .5;
 }
 
-.main-component .card-2__text {
+.wrapper-component .main-component .card-2__text {
   padding: 4px 0 26px 0;
 }
 
-.main-component .card-2 .btn-pear {
-  background-color: #C0DF33;
-  border: 0px solid #C0DF33;
+.wrapper-component .main-component .card-2 .btn {
+  padding: 15px 85px 14px 85px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5px;
 }
 
-.main-component .card-3 {
+.wrapper-component .main-component .card-2 .btn:link, .wrapper-component .main-component .card-2 .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.wrapper-component .main-component .card-2 .btn-pear {
+  background-color: #C0DF33;
+}
+
+.wrapper-component .main-component .card-2 .btn:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-component .main-component .card-2 .btn:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #F2F2F2;
+  color: #2AB3B1;
+}
+
+.wrapper-component .main-component .card-3 {
   background-color: #2AB3B1;
   color: #FFFFFF;
   position: relative;
 }
 
-.main-component .card-3::after {
+.wrapper-component .main-component .card-3::after {
   content: '';
   position: absolute;
   top: 0;
@@ -143,23 +154,23 @@ body {
   background-color: rgba(255, 255, 255, 0.1519);
 }
 
-.main-component .card-3__heading-secondary {
+.wrapper-component .main-component .card-3__heading-secondary {
   font-size: 18px;
   letter-spacing: -0.22px;
 }
 
-.main-component .card-3__list {
+.wrapper-component .main-component .card-3__list {
   padding-top: 18px;
   list-style: none;
 }
 
-.main-component .card-3__list-item {
+.wrapper-component .main-component .card-3__list-item {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.17px;
 }
 
-.footer__attribution {
+.wrapper-component .footer__attribution {
   width: 100%;
   padding: 0.5rem 0 1rem 0;
   display: -webkit-box;
@@ -178,13 +189,13 @@ body {
   background-color: #F2F2F2;
 }
 
-.footer__attribution-text {
+.wrapper-component .footer__attribution-text {
   color: #9AA7BE;
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
 
-.footer__attribution-link {
+.wrapper-component .footer__attribution-link {
   display: inline-block;
   padding-top: 0.5em;
   color: #3b53b0;
@@ -216,14 +227,11 @@ body {
 ToDo
 
 - fontsize %, rem and em - change px into rem / em;
-- positioning in the body;
-- add footer;
 - check sass variables;
 - check if can separate the btn-pear like above;
 - add box shadow;
-- check: button or link;
 - add effect to button and better focus style;
-- RWD on desktop
+- RWD on desktop size of elements!
 - add git ignore;
 - add to readme info about mobile first etc, about project;
 

@@ -17,23 +17,11 @@ $pear:#C0DF33;
   box-sizing: border-box;
 }
 
-html {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 body  {
   font-family: $base-font;
   background-color: $concrete;
 }
 
-.btn {
-  padding: 15px 85px 14px 85px;
-  color: $white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 5px;
-}
 
 .screen-reader-only {
   position: absolute;
@@ -52,124 +40,152 @@ body  {
   align-items: center;
   justify-content: center;
   background-color: $concrete;
-}
-.main-component {
-  padding: 32px;
-  background-color: $concrete;
 
-  .card {
-    padding: 24px;
-
-    &-1 {
-      background-color: $white;
-      border-radius: 8px 8px 0 0;
-    
-      &__heading-primary {
-        font-size: 20px;
-        padding: 28px 0 24px 0;
-        color: $easternBlue;
-      }
-    
-      &__heading-secondary {
-        font-size: 15px;
-        color: $pear;
-      }
-    
-      &__text {
-        padding: 16px 0 8px 0;
-        font-size: 14px;
-        line-height: 26px;
-        color: $cadetBlue;
-      }
-    }
-
-    &-2 {
-      background-color: $easternBlue;
-      color: $white;
-    
-      &__heading-secondary {
-        font-size: 18px;
-      }
-    
-      &__pricing {
-        margin-top: 18px;
-        display: flex;
-    
-        &-price {
-          font-size: 32px;
-          font-weight: 700;
+  .main-component {
+    padding: 32px;
+    background-color: $concrete;
+  
+    .card {
+      padding: 24px;
+  
+      &-1 {
+        background-color: $white;
+        border-radius: 8px 8px 0 0;
+      
+        &__heading-primary {
+          font-size: 20px;
+          padding: 28px 0 24px 0;
+          color: $easternBlue;
         }
-    
-        &-period {
-          padding: 8px 0 0 11px;
-          opacity: .5;
+      
+        &__heading-secondary {
+          font-size: 15px;
+          color: $pear;
+        }
+      
+        &__text {
+          padding: 16px 0 8px 0;
+          font-size: 14px;
+          line-height: 26px;
+          color: $cadetBlue;
         }
       }
-    
-      &__text {
-        padding: 4px 0 26px 0;
+  
+      &-2 {
+        background-color: $easternBlue;
+        color: $white;
+      
+        &__heading-secondary {
+          font-size: 18px;
+        }
+      
+        &__pricing {
+          margin-top: 18px;
+          display: flex;
+      
+          &-price {
+            font-size: 32px;
+            font-weight: 700;
+          }
+      
+          &-period {
+            padding: 8px 0 0 11px;
+            opacity: .5;
+          }
+        }
+      
+        &__text {
+          padding: 4px 0 26px 0;
+        }
+        
+        .btn {
+          padding: 15px 85px 14px 85px;
+          color: $white;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border-radius: 5px;
+        
+            &:link,
+            &:visited {
+              text-transform: uppercase;
+              text-decoration: none;
+              display: inline-block;
+              transition: all .2s;
+            }
+        
+            &-pear {
+              background-color: $pear; 
+            }
+        
+            &:hover {
+              transform: translateY(-3px);
+              box-shadow: 0 10px 20px rgba(0,0,0,.2);
+            }
+        
+            &:active {
+              transform: translateY(-1px);
+              box-shadow: 0 5px 10px rgba(0,0,0,.2);
+              background-color: $concrete;
+              color: $easternBlue;
+            }
+        }
       }
-    
-      .btn-pear {
-        background-color: $pear; 
-        border: 0px solid $pear;
-      }
-    }
-
-    &-3 {
-      background-color: $easternBlue;
-      color: $white;
-      position: relative;
-    
-      &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.1519);
-      }
-    
-      &__heading-secondary {
-        font-size: 18px;
-        letter-spacing: -0.22px;
-      }
-    
-      &__list {
-        padding-top: 18px;
-        list-style: none;
-      }
-    
-      &__list-item {
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: -0.17px;
+  
+      &-3 {
+        background-color: $easternBlue;
+        color: $white;
+        position: relative;
+      
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.1519);
+        }
+      
+        &__heading-secondary {
+          font-size: 18px;
+          letter-spacing: -0.22px;
+        }
+      
+        &__list {
+          padding-top: 18px;
+          list-style: none;
+        }
+      
+        &__list-item {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -0.17px;
+        }
       }
     }
   }
-}
 
-.footer__attribution {
-  width: 100%;
-  padding: 0.5rem 0 1rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: $concrete;
-
-  &-text {
-    color: $cadetBlue;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-  }
-
-  &-link {
-    display: inline-block;
-    padding-top: 0.5em;
-    color: $azureBlue;
-    text-decoration: none;
+  .footer__attribution {
+    width: 100%;
+    padding: 0.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $concrete;
+  
+    &-text {
+      color: $cadetBlue;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+  
+    &-link {
+      display: inline-block;
+      padding-top: 0.5em;
+      color: $azureBlue;
+      text-decoration: none;
+    }
   }
 }
 
@@ -190,21 +206,16 @@ body  {
     grid-column-end: 3;
   }
 }
-
-
 /*
 
 ToDo
 
 - fontsize %, rem and em - change px into rem / em;
-- positioning in the body;
-- add footer;
 - check sass variables;
 - check if can separate the btn-pear like above;
 - add box shadow;
-- check: button or link;
 - add effect to button and better focus style;
-- RWD on desktop
+- RWD on desktop size of elements!
 - add git ignore;
 - add to readme info about mobile first etc, about project;
 
