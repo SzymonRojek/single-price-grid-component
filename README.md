@@ -19,7 +19,7 @@
 - [x] RWD;
 
 - [x] Additional effects: 
-- card overlay color (card three);
+- card overlay color (third card);
 - button transform: move it up on hover and move down on click (active status) with changing background color;
 - styled links in the footer: added a nice color to mark these links and light gray underline. Also light background color for links and blue border color on hover.
 
