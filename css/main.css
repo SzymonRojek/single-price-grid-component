@@ -34,11 +34,7 @@ body {
   background-color: #f2f2f2;
   display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  place-items: center;
 }
 
 .wrapper-component .main-component {

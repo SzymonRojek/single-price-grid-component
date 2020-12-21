@@ -50,8 +50,7 @@ body  {
   max-width: 90rem;
   background-color: $concrete;
   display: grid;
-  justify-content: center;
-  align-content: center;
+  place-items: center;
 
   .main-component {
     padding: 4.5rem 1.75rem 1.75rem 1.75rem;
