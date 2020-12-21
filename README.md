@@ -21,12 +21,12 @@
 * [x] Additional effects: 
 - card overlay color (third card);
 - button transform: move it up on hover and move down on click (active status) with changing background color;
-- styled links in the footer: added a nice color to mark these links and light gray underline. Also light background color for links and blue border color on hover.
+- styled links in the footer: added a nice color to mark these links and light gray underline, light background color for links and blue border color on hover.
 
 
 ### Building project - relevant conclusions:
 
-First time, I have used the grid and I was really enjoying to build this pricing component. Thanks to this challenge I read about accessibility in the ordered lists context. When property the list-style is set to none (removing dots) **the VoiceOver** is not announcing unordered lists properly. For this reason I have started to use **ARIA roles** list and listitem to restore the semantics, which helps to return list in the VoiceOver.
+Thanks to this challenge I read about ordered lists, especially in the context of the safari browser and accessibility. When property the list-style is set to none (removing dots) **the VoiceOver** is not announcing unordered lists properly. For this reason, I've added **ARIA roles** list and listitem to restore the semantics, which helps to identify a list of items and return list in the VoiceOver.
 
 
 ## Setup
