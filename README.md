@@ -26,8 +26,7 @@
 
 ### Building project - relevant conclusions:
 
-Thanks to this challenge I read about ordered lists, especially in the context of the Safari browser and accessibility. When the list-style property is set to none (removing dots) **the VoiceOver** is not announcing unordered lists properly. For this reason, I've added **ARIA roles** list and listitem to restore the semantics, which helps to identify a list of items and return list in the VoiceOver.
-
+Thanks to this challenge I read about ordered lists, especially in the context of the Safari browser and accessibility. When the list-style property is set to none (removing dots) **the VoiceOver** is not announcing unordered lists properly. For this reason, I can add **ARIA roles** list and listitem to restore the semantics, which helps to identify a list of items and return list in the VoiceOver. Here a problem arises because the validator throws a Warning: The list role is unnecessary for element ul/li. Definitely it is an intresting subject and I will find the best solution. 
 
 ## Setup
 
