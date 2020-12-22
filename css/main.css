@@ -39,7 +39,6 @@ body {
 
 .wrapper-component .main-component {
   padding: 4.5rem 1.75rem 1.75rem 1.75rem;
-  background-color: #f2f2f2;
   z-index: 3;
 }
 
@@ -56,7 +55,7 @@ body {
 
 .wrapper-component .main-component .card-1__heading-primary {
   font-size: 1.25rem;
-  padding: 1.75rem 0 1.5rem 0;
+  padding: 0.7rem 0 1.5rem 0;
   color: #2ab2af;
 }
 
@@ -176,6 +175,7 @@ body {
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: -0.0106rem;
+  opacity: .75;
 }
 
 @media (min-width: 48rem) {

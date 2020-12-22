@@ -54,7 +54,6 @@ body  {
 
   .main-component {
     padding: 4.5rem 1.75rem 1.75rem 1.75rem;
-    background-color: $concrete;
     z-index: 3;
   
     .card {
@@ -67,7 +66,7 @@ body  {
       
         &__heading-primary {
           font-size: 1.25rem;
-          padding: 1.75rem 0 1.5rem 0;
+          padding: 0.7rem 0 1.5rem 0;
           color: $easternBlue;
         }
       
@@ -181,6 +180,7 @@ body  {
           font-size: 0.875rem;
           line-height: 1.25rem;
           letter-spacing: -0.0106rem;
+          opacity: .75;
         }
       }
     }
