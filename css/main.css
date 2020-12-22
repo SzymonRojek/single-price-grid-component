@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
-  background-color: #f2f2f2;
+  background-color: #e9f0f7;
   text-rendering: optimizeSpeed;
 }
 
@@ -31,7 +31,7 @@ body {
 .wrapper-component {
   min-height: 100vh;
   max-width: 90rem;
-  background-color: #f2f2f2;
+  background-color: #e9f0f7;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -68,7 +68,7 @@ body {
   padding: 1rem 0 0.5rem 0;
   font-size: 0.875rem;
   line-height: 1.625rem;
-  color: #98a6bd;
+  color: #98a7bd;
 }
 
 @media (min-width: 26.25rem) {
@@ -234,12 +234,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f2f2f2;
+  background-color: #e9f0f7;
 }
 
 .wrapper-component .footer__attribution-text {
   padding-bottom: 0.5em;
-  color: #98a6bd;
+  color: #98a7bd;
   font-size: 0.8rem;
   letter-spacing: 0.0625rem;
 }

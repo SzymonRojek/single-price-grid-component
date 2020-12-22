@@ -7,7 +7,8 @@ $base-font: 'Karla', sans-serif;
 $white:hsl(0, 0%, 100%);
 $concrete:hsl(0, 0%, 95%);
 $grayBombay:hsl(214, 5%, 73%);
-$cadetBlue:hsl(218, 22%, 67%);
+$blackSqueeze:hsl(208, 45%, 94%);
+$cadetBlue: hsl(217, 22%, 67%);
 $azureBlue: hsl(228, 50%, 46%);
 $cornflowerBlue:hsl(222, 89%, 64%);
 $easternBlue:hsl(179, 62%, 43%);
@@ -32,7 +33,7 @@ html {
 body  {
   // font-size by default 16px
   font-family: $base-font;
-  background-color: $concrete;
+  background-color: $blackSqueeze;
   text-rendering: optimizeSpeed;
 }
 
@@ -48,7 +49,8 @@ body  {
 .wrapper-component {
   min-height: 100vh;
   max-width: 90rem;
-  background-color: $concrete;
+  // background-color: $concrete;
+  background-color: $blackSqueeze;
   display: grid;
   place-items: center;
 
@@ -213,7 +215,7 @@ body  {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $concrete;
+    background-color: $blackSqueeze;
   
     &-text {
       padding-bottom: 0.5em;
