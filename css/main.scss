@@ -120,14 +120,12 @@ body  {
         .btn {
           padding: 0.9375rem 5.3125rem 0.875rem 5.3125rem;
           color: $white;
-          text-transform: uppercase;
           letter-spacing: 0.0625rem;
           border-radius: 0.3125rem;
         
             &:link,
             &:visited {
               display: inline-block;
-              text-transform: uppercase;
               text-decoration: none;
               transition: all .2s;
             }
