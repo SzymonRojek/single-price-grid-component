@@ -270,13 +270,4 @@ body {
   background-color: rgba(81, 131, 245, 0.302);
   border-bottom: 0.125rem solid #5183f5;
 }
-
-@media (min-width: 48rem) {
-  .wrapper-component .footer__attribution {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-}
 /*# sourceMappingURL=main.css.map */
