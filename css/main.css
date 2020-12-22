@@ -38,7 +38,7 @@ body {
 }
 
 .wrapper-component .main-component {
-  padding: 4.5rem 1.75rem 1.75rem 1.75rem;
+  padding: 1.75rem;
   z-index: 3;
 }
 
@@ -48,14 +48,14 @@ body {
 }
 
 .wrapper-component .main-component .card-1 {
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0 1.5rem;
   background-color: white;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .wrapper-component .main-component .card-1__heading-primary {
   font-size: 1.25rem;
-  padding: 0.7rem 0 1.5rem 0;
+  padding: 0.25rem 0 1.5rem 0;
   color: #2ab2af;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .wrapper-component .main-component .card-1__text {
-  padding: 1rem 0 0.5rem 0;
+  padding: 1rem 0 2rem 0;
   font-size: 0.875rem;
   line-height: 1.625rem;
   color: #98a7bd;
@@ -88,7 +88,7 @@ body {
 }
 
 .wrapper-component .main-component .card-2__pricing {
-  margin-top: 1.125rem;
+  padding-top: 1.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,6 +191,17 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: c1;
+    padding: 2.5rem;
+  }
+  .wrapper-component .main-component .card-1__heading-primary {
+    font-size: 1.5rem;
+  }
+  .wrapper-component .main-component .card-1__subtitle {
+    font-size: 1.125rem;
+    padding-bottom: 0.6875rem;
+  }
+  .wrapper-component .main-component .card-1__text {
+    font-size: 1rem;
   }
   .wrapper-component .main-component .card-2 {
     -ms-grid-row: 2;
@@ -203,6 +214,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 2.5rem;
   }
   .wrapper-component .main-component .card-3 {
     -ms-grid-row: 2;
@@ -215,12 +227,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 2.5rem;
   }
 }
 
 .wrapper-component .footer__attribution {
-  width: 100%;
-  padding-bottom: 1rem;
+  padding: 0.5rem 0 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -257,5 +269,14 @@ body {
 .wrapper-component .footer__attribution-link:hover {
   background-color: rgba(81, 131, 245, 0.302);
   border-bottom: 0.125rem solid #5183f5;
+}
+
+@media (min-width: 48rem) {
+  .wrapper-component .footer__attribution {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
