@@ -38,23 +38,24 @@ body {
   place-items: center;
 }
 
-.wrapper-component .main-component {
+.main-component {
   padding: 1.75rem;
   z-index: 3;
 }
 
-.wrapper-component .main-component .card {
+.card {
+  border-radius: 0.5rem;
   -webkit-box-shadow: 0rem 1.25rem 1.25rem rgba(0, 0, 0, 0.189);
           box-shadow: 0rem 1.25rem 1.25rem rgba(0, 0, 0, 0.189);
 }
 
-.wrapper-component .main-component .card-1 {
+.card-1 {
   padding: 1.5rem 1.5rem 0 1.5rem;
   background-color: white;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.wrapper-component .main-component .card-1__heading-primary {
+.card-1__heading-primary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,18 +65,18 @@ body {
           flex-direction: column;
 }
 
-.wrapper-component .main-component .card-1__heading-primary-main {
+.card-1__heading-primary-main {
   font-size: 1.25rem;
   padding: 0.25rem 0 1.5rem 0;
   color: #2ab2af;
 }
 
-.wrapper-component .main-component .card-1__heading-primary-sub {
+.card-1__heading-primary-sub {
   font-size: 0.9375rem;
   color: #c0df34;
 }
 
-.wrapper-component .main-component .card-1__text {
+.card-1__text {
   padding: 1rem 0 2rem 0;
   font-size: 0.875rem;
   line-height: 1.625rem;
@@ -83,68 +84,69 @@ body {
 }
 
 @media (min-width: 26.25rem) {
-  .wrapper-component .main-component .card-1 .card-1__text-developers {
+  .card-1 .card-1__text-developers {
     display: block;
   }
 }
 
-.wrapper-component .main-component .card-2 {
+.card-2 {
   padding: 1.5rem;
+  border-bottom-left-radius: 0.5rem;
   background-color: #2ab2af;
   color: white;
 }
 
-.wrapper-component .main-component .card-2__heading-secondary {
+.card-2__heading-secondary {
   font-size: 1.125rem;
 }
 
-.wrapper-component .main-component .card-2__pricing {
+.card-2__pricing {
   padding-top: 1.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.wrapper-component .main-component .card-2__pricing-price {
+.card-2__pricing-price {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.wrapper-component .main-component .card-2__pricing-period {
+.card-2__pricing-period {
   padding: 0.5rem 0 0 0.6875rem;
   opacity: .5;
 }
 
-.wrapper-component .main-component .card-2__text {
+.card-2__text {
   padding: 0.25rem 0 1.625rem 0;
 }
 
-.wrapper-component .main-component .card-2 .btn {
+.card-2 .btn {
   padding: 0.9375rem 5.3125rem 0.875rem 5.3125rem;
   color: white;
   letter-spacing: 0.0625rem;
   border-radius: 0.3125rem;
 }
 
-.wrapper-component .main-component .card-2 .btn:link, .wrapper-component .main-component .card-2 .btn:visited {
+.card-2 .btn:link, .card-2 .btn:visited {
   display: inline-block;
   text-decoration: none;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-.wrapper-component .main-component .card-2 .btn--primary {
+.card-2 .btn--primary {
   background-color: #c0df34;
 }
 
-.wrapper-component .main-component .card-2 .btn:hover {
+.card-2 .btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   -webkit-box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.189);
           box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.189);
 }
 
-.wrapper-component .main-component .card-2 .btn:active {
+.card-2 .btn:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   color: #2ab2af;
@@ -153,14 +155,15 @@ body {
           box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.189);
 }
 
-.wrapper-component .main-component .card-3 {
+.card-3 {
   padding: 1.5rem;
+  border-bottom-right-radius: 0.5rem;
   background-color: #2ab2af;
   color: white;
   position: relative;
 }
 
-.wrapper-component .main-component .card-3::after {
+.card-3::after {
   content: '';
   position: absolute;
   top: 0;
@@ -170,17 +173,17 @@ body {
   background-color: rgba(255, 255, 255, 0.153);
 }
 
-.wrapper-component .main-component .card-3__heading-secondary {
+.card-3__heading-secondary {
   font-size: 1.125rem;
   letter-spacing: -0.0138rem;
 }
 
-.wrapper-component .main-component .card-3__list {
+.card-3__list {
   padding-top: 1.125rem;
   list-style: none;
 }
 
-.wrapper-component .main-component .card-3__list-item {
+.card-3__list-item {
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: -0.0106rem;
@@ -188,7 +191,7 @@ body {
 }
 
 @media (min-width: 48rem) {
-  .wrapper-component .main-component .card {
+  .card {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -197,32 +200,32 @@ body {
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 'c1 c1' 'c2 c3';
   }
-  .wrapper-component .main-component .card-1 {
+  .card-1 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: c1;
     padding: 2.5rem;
   }
-  .wrapper-component .main-component .card-1__heading-primary-main {
+  .card-1__heading-primary-main {
     font-size: 1.5rem;
   }
-  .wrapper-component .main-component .card-1__heading-primary-sub {
+  .card-1__heading-primary-sub {
     font-size: 1.125rem;
     padding-bottom: 0.6875rem;
   }
-  .wrapper-component .main-component .card-1__text {
+  .card-1__text {
     font-size: 1rem;
   }
-  .wrapper-component .main-component .card-2 {
+  .card-2 {
     padding: 2.5rem;
   }
-  .wrapper-component .main-component .card-3 {
+  .card-3 {
     padding: 2.5rem;
   }
 }
 
-.wrapper-component .footer__attribution {
+.footer__attribution {
   padding: 0.5rem 0 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,14 +243,14 @@ body {
   background-color: #e9f0f7;
 }
 
-.wrapper-component .footer__attribution-text {
+.footer__attribution-text {
   padding-bottom: 0.5em;
   color: #98a7bd;
   font-size: 0.8rem;
   letter-spacing: 0.0625rem;
 }
 
-.wrapper-component .footer__attribution-link {
+.footer__attribution-link {
   display: inline-block;
   padding-top: 0.5em;
   text-decoration: none;
@@ -257,7 +260,7 @@ body {
   line-height: 1rem;
 }
 
-.wrapper-component .footer__attribution-link:hover {
+.footer__attribution-link:hover {
   background-color: rgba(81, 131, 245, 0.302);
   border-bottom: 0.125rem solid #5183f5;
 }
