@@ -83,6 +83,16 @@ body {
   color: #98a7bd;
 }
 
+.card-1__description br {
+  display: none;
+}
+
+@media (min-width: 26.25rem) {
+  .card-1__description br {
+    display: inline-block;
+  }
+}
+
 .card-2 {
   padding: 1.5rem;
   background-color: #2ab2af;
@@ -111,7 +121,7 @@ body {
 }
 
 .card-2__text {
-  padding: 0.1875rem 0 29px 0;
+  padding: 0.1875rem 0 1.8125rem 0;
 }
 
 .card-2 .btn {
@@ -223,7 +233,6 @@ body {
 }
 
 .footer__attribution {
-  padding: 0.5rem 0 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,19 +240,20 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 0 1rem 0;
   background-color: #e9f0f7;
 }
 
 .footer__attribution-text {
   padding-bottom: 0.5em;
-  color: #98a7bd;
   font-size: 0.8rem;
+  color: #98a7bd;
   letter-spacing: 0.0625rem;
 }
 
