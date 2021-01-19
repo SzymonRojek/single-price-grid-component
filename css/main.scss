@@ -219,6 +219,10 @@ body  {
     .card-2 {
       padding: 40px 40px 39px 40px;
       border-bottom-left-radius: 0.5rem;
+
+      &__pricing {
+        padding-bottom: 4px
+      }
     }
     .card-3 {
       padding: 40px;
