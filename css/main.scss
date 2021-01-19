@@ -197,7 +197,7 @@ body  {
   }
     .card-1 {
       grid-area: c1; // could be grid-column: 1/3 instead of grid-template-areas
-      padding: 2.5rem;
+      padding: 2.5rem 2.5rem 1rem 2.5rem;
     
         &__heading-primary-main {
           font-size: 1.5rem;
