@@ -29,6 +29,7 @@ body {
 }
 
 .wrapper-component {
+  margin: 0 auto;
   min-height: 100vh;
   max-width: 90rem;
   background-color: #e9f0f7;
