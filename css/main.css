@@ -85,7 +85,6 @@ body {
 
 .card-2 {
   padding: 1.5rem;
-  border-bottom-left-radius: 0.5rem;
   background-color: #2ab2af;
   color: white;
 }
@@ -152,7 +151,7 @@ body {
 .card-3 {
   position: relative;
   padding: 1.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
   background-color: #2ab2af;
   color: white;
 }
@@ -211,9 +210,11 @@ body {
   }
   .card-2 {
     padding: 2.5rem;
+    border-bottom-left-radius: 0.5rem;
   }
   .card-3 {
     padding: 2.5rem;
+    border-bottom-left-radius: 0;
   }
 }
 
