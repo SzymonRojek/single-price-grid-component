@@ -210,11 +210,11 @@ body {
     padding-bottom: 40px;
   }
   .card-2 {
-    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    padding: 40px 40px 39px 40px;
     border-bottom-left-radius: 0.5rem;
   }
   .card-3 {
-    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    padding: 40px;
     border-bottom-left-radius: 0;
   }
 }
