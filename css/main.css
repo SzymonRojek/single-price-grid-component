@@ -94,7 +94,7 @@ body {
 }
 
 .card-2__pricing {
-  padding-top: 17px;
+  padding-top: 1.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
