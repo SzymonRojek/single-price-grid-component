@@ -29,13 +29,13 @@ body {
 }
 
 .wrapper-component {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   margin: 0 auto;
   min-height: 100vh;
   max-width: 90rem;
   background-color: #e9f0f7;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
 }
 
 .main-component {
@@ -76,17 +76,11 @@ body {
   color: #c0df34;
 }
 
-.card-1__text {
+.card-1__description {
   padding: 1rem 0 2rem 0;
   font-size: 0.875rem;
   line-height: 1.625rem;
   color: #98a7bd;
-}
-
-@media (min-width: 26.25rem) {
-  .card-1 .card-1__text-developers {
-    display: block;
-  }
 }
 
 .card-2 {
@@ -156,11 +150,11 @@ body {
 }
 
 .card-3 {
+  position: relative;
   padding: 1.5rem;
   border-bottom-right-radius: 0.5rem;
   background-color: #2ab2af;
   color: white;
-  position: relative;
 }
 
 .card-3::after {
@@ -196,8 +190,6 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
         grid-template-areas: 'c1 c1' 'c2 c3';
   }
   .card-1 {
@@ -214,7 +206,7 @@ body {
     font-size: 1.125rem;
     padding-bottom: 0.6875rem;
   }
-  .card-1__text {
+  .card-1__description {
     font-size: 1rem;
   }
   .card-2 {

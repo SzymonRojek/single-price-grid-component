@@ -47,12 +47,12 @@ body  {
 }
 
 .wrapper-component {
+  display: grid;
+  place-items: center;
   margin: 0 auto;
   min-height: 100vh;
   max-width: 90rem;
   background-color: $blackSqueeze;
-  display: grid;
-  place-items: center;
 }
 
 .main-component {
@@ -85,17 +85,11 @@ body  {
       }
     }
   
-    &__text {
+    &__description {
       padding: 1rem 0 2rem 0;
       font-size: 0.875rem;
       line-height: 1.625rem;
       color: $cadetBlue;
-    }
-
-    @media (min-width: 26.25rem) {
-      .card-1__text-developers {
-        display: block;
-      }
     }
   }
 
@@ -160,11 +154,11 @@ body  {
   }
 
   &-3 {
+    position: relative;
     padding: 1.5rem;
     border-bottom-right-radius: 0.5rem;
     background-color: $easternBlue;
     color: $white;
-    position: relative;
   
     &::after {
       content: '';
@@ -199,7 +193,6 @@ body  {
   .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 'c1 c1' 'c2 c3';
   }
     .card-1 {
@@ -215,7 +208,7 @@ body  {
           padding-bottom: 0.6875rem;
         }
 
-        &__text {
+        &__description {
           font-size: 1rem;
         }
     }
