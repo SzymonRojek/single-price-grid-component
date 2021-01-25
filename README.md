@@ -3,13 +3,8 @@
 
 ## 🎥 Preview site [here](https://szymonrojek.github.io/single-price-grid-component/)
 
-[Frontendmentor.io](https://www.frontendmentor.io/dashboard) challenge to build Single Price Component by using HTML and CSS:
-
-* build out the project and get it looking as close to the design as [possible](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc) &#8592; check it out the link or the design folder;
-* view the optimal layout for the site depending on device's screen size;
-
-## **For this challenge I've used:**
-* [x] HTML semantic elements:
+## **For this project I have used:**
+* [x] HTML semantic elements;
 * [x] Invisible content just for Screen Reader users;
 * [x] BEM naming;
 * [x] Pseudo-element for card overlay;
@@ -30,4 +25,6 @@ Thanks to this challenge I read about ordered lists, especially in the context o
 
 ## Setup
 
-Clone this repo to your desktop and run this project locally using npm to install all the dependencies.
+Clone this repo to your desktop and run this project locally.
+
+Challenge from the website [Frontend Mentor](https://www.frontendmentor.io)
