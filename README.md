@@ -1,7 +1,7 @@
 
 # Single Price Component
 
-## 🎥 Preview site [here](https://szymonrojek.github.io/single-price-grid-component/)
+## 🎥 Preview site &rarr; [here](https://szymonrojek.github.io/single-price-grid-component/)
 
 ## **For this project I have used:**
 * [x] HTML semantic elements;
@@ -27,4 +27,4 @@ Thanks to this challenge I read about ordered lists, especially in the context o
 
 Clone this repo to your desktop and run this project locally.
 
-Challenge from the website [Frontend Mentor](https://www.frontendmentor.io)
+This challenge has been taken from the website [Frontend Mentor](https://www.frontendmentor.io).
