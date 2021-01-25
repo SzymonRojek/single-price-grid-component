@@ -27,4 +27,4 @@ Thanks to this challenge I read about ordered lists, especially in the context o
 
 Clone this repo to your desktop and run this project locally.
 
-This challenge has been taken from the website [Frontend Mentor](https://www.frontendmentor.io).
+The challenge comes from the website [Frontend Mentor](https://www.frontendmentor.io).
