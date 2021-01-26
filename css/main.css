@@ -28,7 +28,7 @@ body {
   overflow: hidden !important;
 }
 
-.wrapper-component {
+.grid-wrap {
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -38,25 +38,22 @@ body {
   background-color: #e9f0f7;
 }
 
-.main-component {
+.grid {
   padding: 1.75rem;
   z-index: 3;
-}
-
-.card {
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 1.25rem 1.25rem rgba(0, 0, 0, 0.189);
           box-shadow: 0 1.25rem 1.25rem rgba(0, 0, 0, 0.189);
 }
 
-.card-1 {
+.grid .grid__c1 {
   padding: 1.5rem 1.5rem 0 1.5rem;
   background-color: white;
   border-radius: 0.5rem 0.5rem 0 0;
   grid-area: c1;
 }
 
-.card-1__heading-primary {
+.grid .grid__c1-heading-primary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,92 +63,92 @@ body {
           flex-direction: column;
 }
 
-.card-1__heading-primary-main {
+.grid .grid__c1-heading-primary-main {
   font-size: 1.25rem;
   padding: 0.25rem 0 1.375rem 0;
   color: #2ab2af;
 }
 
-.card-1__heading-primary-sub {
+.grid .grid__c1-heading-primary-sub {
   font-size: 0.9375rem;
   color: #c0df34;
 }
 
-.card-1__description {
+.grid .grid__c1-description {
   padding: 0.5rem 0 2rem 0;
   font-size: 0.875rem;
   line-height: 1.625rem;
   color: #98a7bd;
 }
 
-.card-1__description br {
+.grid .grid__c1-description br {
   display: none;
 }
 
 @media (min-width: 26.25rem) {
-  .card-1__description br {
+  .grid .grid__c1-description br {
     display: inline-block;
   }
 }
 
-.card-2 {
+.grid .grid__c2 {
   padding: 1.5rem;
   background-color: #2ab2af;
   color: white;
   grid-area: c2;
 }
 
-.card-2__heading-secondary {
+.grid .grid__c2-heading-secondary {
   font-size: 1.125rem;
 }
 
-.card-2__pricing {
+.grid .grid__c2-pricing {
   padding-top: 1.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.card-2__pricing-price {
+.grid .grid__c2-pricing-price {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.card-2__pricing-period {
+.grid .grid__c2-pricing-period {
   padding: 0.5rem 0 0 0.6875rem;
   opacity: .5;
 }
 
-.card-2__text {
+.grid .grid__c2-text {
   padding: 0.1875rem 0 1.8125rem 0;
 }
 
-.card-2 .btn {
+.grid .grid__c2 .btn {
   padding: 0.9375rem 5.3125rem 0.875rem 5.3125rem;
   color: white;
   letter-spacing: 0.0625rem;
   border-radius: 0.3125rem;
 }
 
-.card-2 .btn:link, .card-2 .btn:visited {
+.grid .grid__c2 .btn:link, .grid .grid__c2 .btn:visited {
   display: inline-block;
   text-decoration: none;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
 
-.card-2 .btn--primary {
+.grid .grid__c2 .btn--primary {
   background-color: #c0df34;
 }
 
-.card-2 .btn:hover {
+.grid .grid__c2 .btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   -webkit-box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.189);
           box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.189);
 }
 
-.card-2 .btn:active {
+.grid .grid__c2 .btn:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
   color: #2ab2af;
@@ -160,7 +157,7 @@ body {
           box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.189);
 }
 
-.card-3 {
+.grid .grid__c3 {
   position: relative;
   padding: 1.5rem;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -169,7 +166,7 @@ body {
   grid-area: c3;
 }
 
-.card-3::after {
+.grid .grid__c3::after {
   content: '';
   position: absolute;
   top: 0;
@@ -179,17 +176,17 @@ body {
   background-color: rgba(255, 255, 255, 0.153);
 }
 
-.card-3__heading-secondary {
+.grid .grid__c3-heading-secondary {
   font-size: 1.125rem;
   letter-spacing: -0.0138rem;
 }
 
-.card-3__list {
+.grid .grid__c3-list {
   padding-top: 1.125rem;
   list-style: none;
 }
 
-.card-3__list-item {
+.grid .grid__c3-list-item {
   font-size: 0.875rem;
   line-height: 1.25rem;
   letter-spacing: -0.0106rem;
@@ -197,35 +194,35 @@ body {
 }
 
 @media (min-width: 48rem) {
-  .card {
+  .grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 'c1 c1' 'c2 c3';
   }
-  .card-1 {
+  .grid__c1 {
     padding: 2.4375rem 2.5rem 0rem 2.5rem;
   }
-  .card-1__heading-primary-main {
+  .grid__c1-heading-primary-main {
     font-size: 1.5rem;
   }
-  .card-1__heading-primary-sub {
+  .grid__c1-heading-primary-sub {
     font-size: 1.125rem;
   }
-  .card-1__description {
+  .grid__c1-description {
     font-size: 1rem;
     padding-top: 0.6875rem;
     padding-bottom: 2.5rem;
   }
-  .card-2 {
+  .grid__c2 {
     padding: 2.5rem 2.5rem 2.4375rem 2.5rem;
     border-bottom-left-radius: 0.5rem;
   }
-  .card-2__pricing {
+  .grid__c2-offer {
     padding-bottom: 0.25rem;
   }
-  .card-3 {
+  .grid__c3 {
     padding: 2.5rem;
     border-bottom-left-radius: 0;
   }
