@@ -28,18 +28,18 @@ body {
   overflow: hidden !important;
 }
 
-.grid-wrap {
+.wrapper {
+  min-height: 100vh;
+  max-width: 90rem;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin: 0 auto;
-  min-height: 100vh;
-  max-width: 90rem;
   background-color: #e9f0f7;
 }
 
 .grid {
-  padding: 1.75rem;
+  margin: 1.75rem;
   z-index: 3;
   border-radius: 0.5rem;
   -webkit-box-shadow: 0 1.25rem 1.25rem rgba(0, 0, 0, 0.189);
@@ -102,19 +102,19 @@ body {
   font-size: 1.125rem;
 }
 
-.grid .grid__c2-pricing {
+.grid .grid__c2-offer {
   padding-top: 1.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.grid .grid__c2-pricing-price {
+.grid .grid__c2-offer-price {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.grid .grid__c2-pricing-period {
+.grid .grid__c2-offer-period {
   padding: 0.5rem 0 0 0.6875rem;
   opacity: .5;
 }
@@ -200,29 +200,30 @@ body {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: 'c1 c1' 'c2 c3';
+    padding: 0;
   }
-  .grid__c1 {
+  .grid .grid__c1 {
     padding: 2.4375rem 2.5rem 0rem 2.5rem;
   }
-  .grid__c1-heading-primary-main {
+  .grid .grid__c1-heading-primary-main {
     font-size: 1.5rem;
   }
-  .grid__c1-heading-primary-sub {
+  .grid .grid__c1-heading-primary-sub {
     font-size: 1.125rem;
   }
-  .grid__c1-description {
+  .grid .grid__c1-description {
     font-size: 1rem;
     padding-top: 0.6875rem;
     padding-bottom: 2.5rem;
   }
-  .grid__c2 {
+  .grid .grid__c2 {
     padding: 2.5rem 2.5rem 2.4375rem 2.5rem;
     border-bottom-left-radius: 0.5rem;
   }
-  .grid__c2-offer {
+  .grid .grid__c2-offer {
     padding-bottom: 0.25rem;
   }
-  .grid__c3 {
+  .grid .grid__c3 {
     padding: 2.5rem;
     border-bottom-left-radius: 0;
   }
