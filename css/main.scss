@@ -135,29 +135,33 @@ body  {
       color: $white;
       letter-spacing: 0.0625rem;
       border-radius: 0.3125rem;
+
+      &--primary {
+        background-color: $pear; 
+      }
     
-        &:link,
-        &:visited {
-          display: inline-block;
-          text-decoration: none;
-          transition: all .2s;
-        }
-    
-        &--primary {
-          background-color: $pear; 
-        }
-    
-        &:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 0.625rem 1.25rem $black-alpha;
-        }
-    
-        &:active {
-          transform: translateY(-1px);
-          color: $easternBlue;
-          background-color: $concrete;
-          box-shadow: 0 0.3125rem 0.625rem $black-alpha;
-        }
+      &:link,
+      &:visited {
+        display: inline-block;
+        text-decoration: none;
+        transition: all .2s;
+      }
+  
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0.625rem 1.25rem $black-alpha;
+      }
+  
+      &:active {
+        transform: translateY(-1px);
+        color: $easternBlue;
+        background-color: $concrete;
+        box-shadow: 0 0.3125rem 0.625rem $black-alpha;
+      }
+
+      &:focus {
+        border: 2px solid $cornflowerBlue;
+      }
     }
   }
 

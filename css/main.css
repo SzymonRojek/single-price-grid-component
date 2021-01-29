@@ -130,15 +130,15 @@ body {
   border-radius: 0.3125rem;
 }
 
+.grid .grid__c2 .btn--primary {
+  background-color: #c0df34;
+}
+
 .grid .grid__c2 .btn:link, .grid .grid__c2 .btn:visited {
   display: inline-block;
   text-decoration: none;
   -webkit-transition: all .2s;
   transition: all .2s;
-}
-
-.grid .grid__c2 .btn--primary {
-  background-color: #c0df34;
 }
 
 .grid .grid__c2 .btn:hover {
@@ -155,6 +155,10 @@ body {
   background-color: #f2f2f2;
   -webkit-box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.189);
           box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.189);
+}
+
+.grid .grid__c2 .btn:focus {
+  border: 2px solid #5183f5;
 }
 
 .grid .grid__c3 {
