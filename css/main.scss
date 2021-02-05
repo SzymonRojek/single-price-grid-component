@@ -158,10 +158,6 @@ body  {
         background-color: $concrete;
         box-shadow: 0 0.3125rem 0.625rem $black-alpha;
       }
-
-      &:focus {
-        border: 2px solid $cornflowerBlue;
-      }
     }
   }
 
